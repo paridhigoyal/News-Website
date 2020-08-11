@@ -16,7 +16,7 @@ function NewsArticle({ article, bookmarkItem, bookmarkItems, unBookmarkItem }) {
         <h2>loading</h2>) : article.error ? (<h2> {article.error}</h2>) :
             <ul>
                 {articles && articles.map((item, i) => <div>
-                    <a href={item.url} target="_blank"  ><h3>{item.title}</h3></a>
+                    <a href={item.url} target="_blank"rel=" noopener noreferrer"  ><h3>{item.title}</h3></a>
                     <NewsItem bookmarkItem={bookmarkItem} unBookmarkItem={unBookmarkItem} key={i} item={item} bookmarkItems={bookmarkItems} />
                     {/* <button onclick={() =>isBookmark=true}>Bookmark</button> */}
 

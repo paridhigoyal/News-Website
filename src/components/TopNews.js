@@ -10,14 +10,14 @@ function TopNews({ topnews }) {
     return topnews.loading ? (
         <h2>loading</h2>) : topnews.error ? (<h2> {topnews.error}</h2>) :
             <ul>
-               <marquee> <h2>Top Headlines</h2></marquee>
+               <center> <h2>Top Headlines</h2></center>
                 {headline && headline.map((item, index) =>
                     // <Link to={`news/${item.title}`}>
                     // <li key={index}>{item.title}</li> 
                     // </Link>
                     <div className="text" >
-                        <img src={item.urlToImage} width="80" height="80" />
-                        <a href={item.url} target="_blank" ><h3 className="text" >{item.title}</h3>
+                        <img alt="newsimg" src={item.urlToImage} width="80" height="80" />
+                        <a href={item.url} target="_blank" rel="noopener noreferrer"><h3 className="text" >{item.title}</h3>
                         </a> <h3 className="text">{item.description}</h3></div>
                 )}
 

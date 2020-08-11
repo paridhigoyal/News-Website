@@ -17,10 +17,10 @@ export class App extends Component {
 
         <div>
           <nav>
-          <h1><center>News Website</center></h1>
-            <ul>  
-              <li> <Link to="/" className="active">Home</Link></li> 
-              <li> <Link to="/Bookmarks">Bookmarks</Link></li> 
+            <h1><center>News Website</center></h1>
+            <ul>
+              <li> <Link to="/" className="active">Home</Link></li>
+              <li> <Link to="/Bookmarks">Bookmarks</Link></li>
             </ul>
           </nav>
         </div>

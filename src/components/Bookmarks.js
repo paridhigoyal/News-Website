@@ -20,7 +20,7 @@ const Bookmarks = ({ bookmarkItems }) => {
 
             {bookmarkItems.map((item, i) => (<div>
                 <NewsItem key={i} item={item} />
-                title: <a href={item.url} target="_blank">{item.title}</a>
+                title: <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
             </div>
             ))}
         </div>
